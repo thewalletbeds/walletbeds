@@ -100,67 +100,67 @@ document.addEventListener('DOMContentLoaded', () => {
     // Dynamic Product Catalog Mappings
     const PRODUCT_CATALOG = {
         "Midnight Tufted Edition": {
-            description: "Midnight Tufted Edition Wallet Bed. Everything you need to transform your bedside table into a luxury resting suite your wallet can relax on every night. Custom made for bi-fold and tri-fold wallets, with the frame specifically fitted for elegant nightstand placement. Made from premium charcoal fabric materials and built to high quality standards, with a soft premium leather mattress that's waterproof, hypoallergenic and resistant to UV and dust.",
+            description: "Midnight Tufted Edition Wallet Bed. A detailed desktop display suite for your wallet. Features a precision-molded frame with a realistic faux-charcoal fabric texture and a tufted-button headboard look. Outfitted with a soft faux-leather mattress deck that is waterproof, hypoallergenic, and dust-resistant.",
             specs: [
-                "Custom made dark charcoal fabric frame and leather mattress included.",
-                "Base recess custom fitted for premium bi-fold/tri-fold wallets.",
-                "Sleek and solid executive bed frame styling with premium nightstand presence.",
-                "Premium top-grain leather: waterproof, UV resistant and hypoallergenic."
+                "Precision-molded polymer frame with faux-charcoal fabric texture.",
+                "Base recess custom fitted for standard bi-fold and tri-fold wallets.",
+                "Soft faux-leather mattress deck: waterproof, UV resistant and dust-proof.",
+                "Sleek executive miniature bed styling for elegant nightstand placement."
             ],
             image_base: "images/brand_lv.jpg",
             image_comforter: "images/brand_lv.jpg"
         },
         "Royal Blue Tufted Edition": {
-            description: "Royal Blue Tufted Edition Wallet Bed. Add deep-contoured button stitching and visual drama to your bedroom or workspace. Precision-engineered with premium royal blue velvet fabric and a plush leather resting deck. Perfect for high-status cards and wallets seeking refined luxury and breathing room.",
+            description: "Royal Blue Tufted Edition Wallet Bed. Bring a unique visual highlight to your nightstand or workspace. Precision-molded from durable polymer with a textured faux-velvet royal blue finish and contoured tufted detailing. Includes a soft faux-leather mattress deck to cradle your cards and wallet.",
             specs: [
-                "Custom made royal blue velvet fabric frame and leather mattress included.",
-                "Base recess custom fitted for premium bi-fold/tri-fold wallets.",
-                "Deep-contoured velvet headboard for premium visual drama.",
-                "Premium top-grain leather: waterproof, UV resistant and hypoallergenic."
+                "Precision-molded polymer frame with faux-velvet royal blue finish.",
+                "Base recess custom fitted for standard bi-fold and tri-fold wallets.",
+                "Soft faux-leather mattress deck: waterproof, UV resistant and dust-proof.",
+                "Contoured headboard design for visual highlights."
             ],
             image_base: "images/brand_goyard.jpg",
             image_comforter: "images/brand_goyard.jpg"
         },
         "Industrial Pipe Edition": {
-            description: "Industrial Pipe Edition Wallet Bed. Designed for modern work desks, tech setups, and rugged workspaces. Precision-built with matte-black steel pipe joints and a premium dark leather mattress. The ultimate industrial statement for tech enthusiasts and heavy-duty wallets.",
+            description: "Industrial Pipe Edition Wallet Bed. Perfect for modern work desks, tech setups, and industrial workspaces. Precision-molded from high-durability polymer replicating rugged matte-black steel pipe joints. Complete with a dark faux-leather mattress deck.",
             specs: [
-                "Rugged matte-black steel pipe frame and leather mattress included.",
-                "Base recess custom fitted for premium bi-fold/tri-fold wallets.",
-                "Industrial aesthetic optimized for tech workstation desk setups.",
-                "Premium top-grain leather: waterproof, UV resistant and hypoallergenic."
+                "Durable polymer frame with realistic industrial pipe-joint styling.",
+                "Base recess custom fitted for standard bi-fold and tri-fold wallets.",
+                "Soft faux-leather mattress deck: waterproof, UV resistant and dust-proof.",
+                "Industrial aesthetic optimized for tech workstation desk setups."
             ],
             image_base: "images/brand_valentino.jpg",
             image_comforter: "images/brand_valentino.jpg"
         },
         "Classic Sleigh Edition": {
-            description: "Classic Sleigh Edition Wallet Bed. A traditional, warm mahogany-finished wood frame featuring elegant curvature and classic sleigh headboards. Crafted for bedroom nightstands, providing organic warmth and premium leather cushioning for your daily essentials.",
+            description: "Classic Sleigh Edition Wallet Bed. Features a traditional sleigh silhouette contoured for bedside nightstands. Molded from durable polymer and finished with a detailed, realistic faux-walnut wood grain. Complete with a soft faux-leather mattress deck.",
             specs: [
-                "Curved solid walnut wood sleigh frame and leather mattress included.",
-                "Base recess custom fitted for premium bi-fold/tri-fold wallets.",
-                "Traditional mahogany walnut finish for bedside warmth.",
-                "Premium top-grain leather: waterproof, UV resistant and hypoallergenic."
+                "Durable polymer frame with realistic faux-walnut wood grain finish.",
+                "Base recess custom fitted for standard bi-fold and tri-fold wallets.",
+                "Soft faux-leather mattress deck: waterproof, UV resistant and dust-proof.",
+                "Traditional sleigh curved headboard styling."
             ],
             image_base: "images/brand_swiss.jpg",
             image_comforter: "images/brand_swiss.jpg"
         },
         "Four-Poster Canopy Edition": {
-            description: "Four-Poster Canopy Edition Wallet Bed. The pinnacle of luxurious display framing. Precision-crafted mahogany wood posts standing tall to create a majestic bedroom setting for your wallet. Offers maximum visibility and security for your cards.",
+            description: "Four-Poster Canopy Edition Wallet Bed. A majestic miniature bedroom frame for your daily pocket essentials. Precision-molded from durable polymer with posts finished in a realistic faux-mahogany wood grain. Features a soft faux-leather mattress deck for high visibility.",
             specs: [
-                "Majestic four-poster mahogany wood frame and leather mattress included.",
-                "Base recess custom fitted for premium bi-fold/tri-fold wallets.",
-                "Maximum display height and premium nightstand canopy presence.",
-                "Premium top-grain leather: waterproof, UV resistant and hypoallergenic."
+                "Durable polymer canopy frame with realistic faux-mahogany finish.",
+                "Base recess custom fitted for standard bi-fold and tri-fold wallets.",
+                "Soft faux-leather mattress deck: waterproof, UV resistant and dust-proof.",
+                "Four-poster miniature design with nightstand canopy presence."
             ],
             image_base: "images/brand_gucci.jpg",
             image_comforter: "images/brand_gucci.jpg"
         },
         "Minimalist Platform": {
-            description: "Minimalist Platform Wallet Bed. A sleek, pristine white lacquer platform frame. Designed for clean desks, minimalist setups, and ultra-modern bedside environments. Features a low-profile premium white leather deck that perfectly cradles your wallet with sophisticated style.",
+            description: "Minimalist Platform Wallet Bed. A low-profile miniature suite designed for clean desks and minimalist environments. Precision-molded from durable polymer with a high-gloss white lacquer finish, paired with a matching white faux-leather mattress deck.",
             specs: [
-                "Pristine white lacquer platform frame and custom leather mattress included.",
-                "Base recess custom fitted for premium bi-fold/tri-fold wallets.",
-                "Sleek low-profile design optimized for clean, modern workspaces.",
-                "Premium top-grain leather: waterproof, UV resistant and hypoallergenic."
+                "Durable polymer frame with high-gloss white finish.",
+                "Base recess custom fitted for standard bi-fold and tri-fold wallets.",
+                "Soft white faux-leather mattress deck: waterproof, UV resistant and dust-proof.",
+                "Sleek low-profile platform design."
             ],
             image_base: "images/brand_white.jpg",
             image_comforter: "images/brand_white.jpg"
