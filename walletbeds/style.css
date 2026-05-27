@@ -2017,14 +2017,14 @@ img {
     }
 }
 
-/* 🤍 Wishlist Heart Overlay Button (Ultra-Minimalist Format) */
+/* 🤍 Wishlist Heart Overlay Button (Electric Blue & White Format) */
 .wishlist-btn {
     position: absolute;
     top: 15px;
     right: 15px;
     background: transparent;
     border: none;
-    color: #121212; /* Dark heart outline */
+    color: var(--brand-teal); /* Electric Blue brand color outline */
     width: 36px;
     height: 36px;
     display: flex;
@@ -2037,18 +2037,18 @@ img {
 }
 
 .wishlist-btn:hover {
-    color: #ff4d4d; /* Turns red on hover */
+    color: var(--text-white); /* Turns pure white on hover */
     transform: scale(1.15);
 }
 
 .wishlist-btn.active {
-    color: #ff4d4d; /* Solid red when liked */
+    color: var(--text-white); /* Solid pure white when liked */
     animation: heartBeat 0.35s ease-in-out;
 }
 
 .wishlist-btn i {
-    font-size: 20px; /* Slightly larger since background circle is removed */
-    filter: drop-shadow(0 1px 3px rgba(255, 255, 255, 0.6)); /* High-contrast drop shadow for visibility on dark images */
+    font-size: 20px; /* Perfectly sized overlay icon */
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.6)); /* Deep drop shadow for readability on light bedding images */
     transition: transform 0.2s ease;
 }
 
@@ -2057,5 +2057,6 @@ img {
     50% { transform: scale(1.25); }
     100% { transform: scale(1); }
 }
+
 
 
