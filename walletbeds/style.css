@@ -1752,3 +1752,268 @@ img {
         gap: 30px;
     }
 }
+
+/* ==========================================================================
+   📦 Rebuilt E-Commerce Checkout Actions & Policies Styling
+   ========================================================================== */
+.modal-delivery-status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+    font-family: var(--font-heading);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
+.delivery-available {
+    color: #10B981; /* Emerald green for positive purchase reinforcement */
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.delivery-available i {
+    font-size: 14px;
+}
+
+.delivery-separator {
+    color: var(--border-light);
+}
+
+.delivery-shipping {
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.delivery-shipping i {
+    color: var(--brand-teal);
+}
+
+/* Email input styling for Modal */
+.modal-email-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.modal-email-label {
+    font-family: var(--font-heading);
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-muted);
+}
+
+.modal-email-input {
+    width: 100%;
+    padding: 14px 18px;
+    border: 1px solid var(--border-light);
+    border-radius: 4px;
+    font-family: var(--font-body);
+    font-size: 14px;
+    outline: none;
+    background-color: var(--bg-gray-subtle);
+    color: var(--text-primary);
+    transition: var(--transition-smooth);
+}
+
+.modal-email-input:focus {
+    border-color: var(--brand-teal);
+    background-color: var(--bg-white);
+    box-shadow: 0 0 0 3px var(--brand-teal-glow);
+}
+
+/* Button stack styling */
+.modal-checkout-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.btn-checkout-add-to-cart {
+    width: 100%;
+    background-color: var(--brand-teal);
+    color: var(--brand-navy);
+    border: 1px solid var(--brand-teal);
+    padding: 16px 24px;
+    border-radius: 4px;
+    font-family: var(--font-heading);
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+    box-shadow: 0 4px 12px var(--brand-teal-glow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.btn-checkout-add-to-cart:hover {
+    background-color: var(--bg-light);
+    color: var(--brand-teal);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 18px var(--brand-teal-glow);
+}
+
+.btn-price-label {
+    font-weight: 800;
+}
+
+/* Shop Pay Premium Action Button */
+.btn-checkout-shop-pay {
+    width: 100%;
+    background-color: #5A31F4; /* Shop Pay Signature Violet */
+    color: var(--text-white);
+    border: 1px solid #5A31F4;
+    padding: 15px 24px;
+    border-radius: 4px;
+    font-family: var(--font-heading);
+    font-size: 13.5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    box-shadow: 0 4px 12px rgba(90, 49, 244, 0.2);
+}
+
+.btn-checkout-shop-pay:hover {
+    background-color: #4C26DF;
+    border-color: #4C26DF;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 18px rgba(90, 49, 244, 0.35);
+}
+
+.shop-pay-logo {
+    display: inline-flex;
+    align-items: center;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 15px;
+    letter-spacing: -0.04em;
+}
+
+.shop-pay-logo i {
+    font-weight: 900;
+    color: #FFFFFF;
+    margin-right: 1px;
+}
+
+.shop-pay-logo span {
+    color: #00D2FF; /* Cyber cyan for 'pay' segment */
+    font-weight: 800;
+}
+
+/* More Payment Options Link */
+.more-payment-options-container {
+    text-align: center;
+    margin-top: 4px;
+    margin-bottom: 8px;
+}
+
+.link-more-payment-options {
+    font-family: var(--font-body);
+    font-size: 12px;
+    color: var(--text-muted);
+    text-decoration: underline;
+    transition: var(--transition-smooth);
+}
+
+.link-more-payment-options:hover {
+    color: var(--text-white);
+}
+
+/* 📄 Policy Page Content Styles */
+.policy-main {
+    padding: 80px 24px;
+    background-color: var(--bg-light);
+}
+
+.policy-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: var(--bg-white);
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    padding: 60px 50px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.policy-container h1 {
+    font-family: var(--font-heading);
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--text-white);
+    margin-bottom: 30px;
+    border-bottom: 2px solid var(--brand-teal);
+    padding-bottom: 15px;
+}
+
+.policy-content {
+    font-family: var(--font-body);
+    font-size: 14px;
+    color: var(--text-primary);
+    line-height: 1.7;
+}
+
+.policy-content h2, .policy-content h3 {
+    font-family: var(--font-heading);
+    color: var(--text-white);
+    margin-top: 35px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.policy-content h2 {
+    font-size: 20px;
+}
+
+.policy-content h3 {
+    font-size: 16px;
+}
+
+.policy-content p {
+    margin-bottom: 18px;
+}
+
+.policy-content ul, .policy-content ol {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.policy-content li {
+    margin-bottom: 8px;
+}
+
+.policy-content a {
+    color: var(--brand-teal);
+    text-decoration: underline;
+    transition: var(--transition-smooth);
+}
+
+.policy-content a:hover {
+    color: var(--text-white);
+}
+
+@media (max-width: 768px) {
+    .policy-container {
+        padding: 40px 25px;
+    }
+    
+    .policy-container h1 {
+        font-size: 26px;
+    }
+}
+

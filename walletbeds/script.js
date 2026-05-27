@@ -182,7 +182,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const selectedProdInput = document.getElementById('selectedProductVal');
     const selectedComforterVal = document.getElementById('selectedComforterVal');
     const selectedPriceVal = document.getElementById('selectedPriceVal');
-    const modalSubmitBtn = document.getElementById('modalSubmitBtn');
+    const modalAddToCartPrice = document.getElementById('modalAddToCartPrice');
     const comforterRadios = document.querySelectorAll('input[name="comforter_option"]');
 
     // Rebuilt modal accordions tabs controller
@@ -233,7 +233,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Update DOM pricing labels
         if (modalPriceLabel) modalPriceLabel.textContent = formattedPrice;
-        if (modalSubmitBtn) modalSubmitBtn.textContent = `NOTIFY ME WHEN AVAILABLE — ${formattedPrice}`;
+        if (modalAddToCartPrice) modalAddToCartPrice.textContent = formattedPrice;
         
         // Sync hidden inputs for FormSpark waiting list submissions
         if (selectedProdInput) selectedProdInput.value = productName;

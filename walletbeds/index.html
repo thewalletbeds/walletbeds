@@ -485,6 +485,11 @@
                             <span class="modal-price-discount">$49.00</span>
                             <span class="modal-badge-save">Save 59%</span>
                         </div>
+                        <div class="modal-delivery-status">
+                            <span class="delivery-available"><i class="fa-solid fa-circle-check"></i> Available now!</span>
+                            <span class="delivery-separator">•</span>
+                            <span class="delivery-shipping"><i class="fa-solid fa-truck"></i> Delivery: 9 to 16 days</span>
+                        </div>
                     </div>
 
                     <!-- Live Launch Alert Banner -->
@@ -582,11 +587,26 @@
                         <input type="hidden" name="comforter_preference" id="selectedComforterVal" value="No Comforter">
                         <input type="hidden" name="total_price" id="selectedPriceVal" value="$25.00">
 
-                        <div class="modal-input-container">
-                            <input type="email" name="email" placeholder="Enter your email address" required>
-                            <button type="submit" class="btn-cta modal-submit-btn" id="modalSubmitBtn">
-                                NOTIFY ME WHEN AVAILABLE — $25.00
+                        <div class="modal-email-wrapper">
+                            <label class="modal-email-label">Enter Email to Checkout or Join Waitlist:</label>
+                            <input type="email" name="email" placeholder="Enter your email address" required class="modal-email-input">
+                        </div>
+
+                        <div class="modal-checkout-actions">
+                            <!-- Add to Cart Button -->
+                            <button type="submit" class="btn-checkout-add-to-cart" id="modalAddToCartBtn">
+                                <i class="fa-solid fa-cart-shopping"></i> Add to Cart — <span class="btn-price-label" id="modalAddToCartPrice">$25.00</span>
                             </button>
+                            
+                            <!-- Shop Pay Express Button -->
+                            <button type="submit" class="btn-checkout-shop-pay" id="modalShopPayBtn">
+                                Buy with <span class="shop-pay-logo"><i>shop</i><span>pay</span></span>
+                            </button>
+                            
+                            <!-- More Payment Options -->
+                            <div class="more-payment-options-container">
+                                <a href="#" class="link-more-payment-options" id="modalMorePaymentsLink">More payment options</a>
+                            </div>
                         </div>
                     </form>
 
@@ -681,8 +701,9 @@
                 
                 <div class="footer-links-col">
                     <h4>Legal & Trust</h4>
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms-of-service.html">Terms of Service</a>
+                    <a href="refund-policy.html">Refund Policy</a>
                 </div>
             </div>
         </div>
