@@ -2017,3 +2017,49 @@ img {
     }
 }
 
+/* 🤍 Wishlist Heart Overlay Button (Shopify Symmetry Format) */
+.wishlist-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(255, 255, 255, 0.95);
+    border: none;
+    color: #121212;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    backdrop-filter: blur(4px);
+    transition: var(--transition-smooth);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    outline: none;
+}
+
+.wishlist-btn:hover {
+    background: #ffffff;
+    color: #ff4d4d; /* Heart turns red on hover */
+    transform: scale(1.08);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+}
+
+.wishlist-btn.active {
+    background: #ffffff;
+    color: #ff4d4d; /* Solid red when item is liked */
+    animation: heartBeat 0.35s ease-in-out;
+}
+
+.wishlist-btn i {
+    font-size: 14px;
+    transition: transform 0.2s ease;
+}
+
+@keyframes heartBeat {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.25); }
+    100% { transform: scale(1); }
+}
+

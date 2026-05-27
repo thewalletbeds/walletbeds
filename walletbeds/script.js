@@ -456,4 +456,25 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
         });
     });
+
+    // ==========================================
+    // 🤍 Wishlist Heart Toggle Logic
+    // ==========================================
+    const wishlistBtns = document.querySelectorAll('.wishlist-btn');
+    wishlistBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation(); // Prevent opening the product detail modal on click
+            e.preventDefault();
+            
+            btn.classList.toggle('active');
+            const icon = btn.querySelector('i');
+            if (btn.classList.contains('active')) {
+                icon.classList.remove('fa-regular');
+                icon.classList.add('fa-solid');
+            } else {
+                icon.classList.remove('fa-solid');
+                icon.classList.add('fa-regular');
+            }
+        });
+    });
 });
