@@ -2060,3 +2060,51 @@ img {
 
 
 
+
+
+/* ==========================================================================
+   ? Card Brand Badge (Top Left of Featured Images)
+   ========================================================================== */
+.card-brand-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 10;
+    font-family: var(--font-heading);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    text-transform: none;
+    pointer-events: none; /* User can click through to card modal */
+    background: rgba(10, 13, 20, 0.65); /* Translucent space-dark background for legibility */
+    padding: 5px 9px;
+    border-radius: 4px;
+    border: 1px solid var(--border-light);
+    display: flex;
+    align-items: center;
+    gap: 0.5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(4px);
+    transition: var(--transition-smooth);
+}
+
+.product-card:hover .card-brand-badge {
+    background: rgba(10, 13, 20, 0.85);
+    border-color: var(--brand-teal);
+    box-shadow: 0 4px 12px var(--brand-teal-glow);
+}
+
+.card-brand-badge .brand-wallet {
+    color: var(--text-white); /* Pure White */
+}
+
+.card-brand-badge .brand-beds {
+    color: var(--brand-teal); /* Electric Brand Blue */
+}
+
+.card-brand-badge .brand-tm {
+    color: var(--text-white); /* Pure White */
+    font-size: 8px;
+    vertical-align: super;
+    margin-left: 0.5px;
+}
