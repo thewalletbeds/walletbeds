@@ -2105,3 +2105,47 @@ img {
     margin-left: 0.5px;
 }
 
+/* ==========================================
+   📦 Package Selection Styles
+   ========================================== */
+.package-option-card {
+    cursor: pointer;
+    display: block;
+}
+
+.package-option-card input[type="radio"] {
+    display: none;
+}
+
+.package-option-design {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid var(--border-light);
+    background-color: var(--bg-gray-subtle);
+    padding: 12px 14px;
+    border-radius: 6px;
+    transition: var(--transition-smooth);
+    user-select: none;
+}
+
+.package-option-design:hover {
+    border-color: var(--text-muted);
+    background-color: rgba(255, 255, 255, 0.02);
+}
+
+.package-option-card input[type="radio"]:checked + .package-option-design {
+    border-color: var(--brand-teal);
+    background-color: var(--bg-white);
+    box-shadow: 0 4px 12px var(--brand-teal-glow);
+}
+
+.package-option-card input[type="radio"]:checked + .package-option-design .option-title {
+    color: var(--text-white);
+}
+
+.package-option-card input[type="radio"]:checked + .package-option-design .option-price {
+    color: var(--brand-teal);
+}
+
+
