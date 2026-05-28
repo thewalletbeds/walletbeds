@@ -100,67 +100,67 @@ document.addEventListener('DOMContentLoaded', () => {
     // Dynamic Product Catalog Mappings
     const PRODUCT_CATALOG = {
         "Midnight Tufted Edition": {
-            description: "Midnight Tufted Edition Wallet Bed. A detailed desktop display suite featuring a high durability polymer frame with a faux charcoal fabric texture and a tufted button headboard look. Outfitted with a soft faux leather mattress deck that is waterproof, hypoallergenic, and dust resistant.",
+            description: "Midnight Tufted Edition Wallet Bed. A premium desktop display and bedside suite featuring a faux charcoal fabric texture and a tufted button headboard. Equipped with an integrated automated nightlight that senses motion and darkness, and a soft surface-protecting lining to cradle your wallet and keys.",
             specs: [
                 "Precision-molded polymer frame with faux-charcoal fabric texture.",
                 "Base recess custom fitted for standard bi-fold and tri-fold wallets.",
-                "Soft faux-leather mattress deck: waterproof, UV resistant and dust-proof.",
-                "Sleek executive miniature bed styling for elegant nightstand placement."
+                "Automated Nightlight Integration: motion and light-sensing warm nightstand glow.",
+                "Surface Protection: soft interior lining prevents scratches on leather and brass."
             ],
             image_base: "images/brand_lv.jpg",
             image_comforter: "images/brand_lv.jpg"
         },
         "Royal Blue Tufted Edition": {
-            description: "Royal Blue Tufted Edition Wallet Bed. Bring a unique visual highlight to your nightstand or workspace. Features a high durability polymer frame with a textured velvet like royal blue finish and contoured tufted detailing. Includes a soft imitation leather mattress deck to cradle your cards and wallet.",
+            description: "Royal Blue Tufted Edition Wallet Bed. Bring a unique visual highlight to your nightstand or workspace. Features a high durability polymer frame with a textured velvet-like royal blue finish. Outfitted with an automated nightlight and a soft surface-protecting lining to cradle your wallet and keys.",
             specs: [
                 "Precision-molded polymer frame with velvet-textured finish.",
                 "Base recess custom fitted for standard bi-fold and tri-fold wallets.",
-                "Soft imitation-leather mattress deck: waterproof, UV resistant and dust-proof.",
-                "Contoured headboard design for visual highlights."
+                "Automated Nightlight Integration: motion and light-sensing warm nightstand glow.",
+                "Surface Protection: soft interior lining prevents scratches on leather and brass."
             ],
             image_base: "images/brand_goyard.jpg",
             image_comforter: "images/brand_goyard.jpg"
         },
         "Industrial Pipe Edition": {
-            description: "Industrial Pipe Edition Wallet Bed. Perfect for modern work desks, tech setups, and industrial workspaces. Crafted with a high durability polymer frame replicating rugged matte black steel pipe joints. Complete with a dark simulated leather mattress deck.",
+            description: "Industrial Pipe Edition Wallet Bed. Perfect for modern work desks, tech setups, and industrial workspaces. Crafted with a high durability polymer frame replicating rugged matte black steel pipe joints. Equipped with an automated nightlight and a soft surface-protecting lining.",
             specs: [
                 "Durable polymer frame with realistic industrial pipe-joint styling.",
                 "Base recess custom fitted for standard bi-fold and tri-fold wallets.",
-                "Soft simulated-leather mattress deck: waterproof, UV resistant and dust-proof.",
-                "Industrial aesthetic optimized for tech workstation desk setups."
+                "Automated Nightlight Integration: motion and light-sensing warm nightstand glow.",
+                "Surface Protection: soft interior lining prevents scratches on leather and brass."
             ],
             image_base: "images/brand_valentino.jpg",
             image_comforter: "images/brand_valentino.jpg"
         },
         "Classic Sleigh Edition": {
-            description: "Classic Sleigh Edition Wallet Bed. Features a traditional sleigh silhouette contoured for bedside nightstands. Crafted from a high durability polymer frame finished with a realistic walnut grain wood effect. Complete with a soft simulated leather mattress deck.",
+            description: "Classic Sleigh Edition Wallet Bed. Features a traditional sleigh silhouette contoured for bedside nightstands. Crafted from a high durability polymer frame finished with a realistic walnut grain wood effect. Complete with an automated nightlight and soft surface-protecting interior lining.",
             specs: [
                 "Durable polymer frame with realistic walnut-grain wood grain finish.",
                 "Base recess custom fitted for standard bi-fold and tri-fold wallets.",
-                "Soft simulated-leather mattress deck: waterproof, UV resistant and dust-proof.",
-                "Traditional sleigh curved headboard styling."
+                "Automated Nightlight Integration: motion and light-sensing warm nightstand glow.",
+                "Surface Protection: soft interior lining prevents scratches on leather and brass."
             ],
             image_base: "images/brand_swiss.jpg",
             image_comforter: "images/brand_swiss.jpg"
         },
         "Four-Poster Canopy Edition": {
-            description: "Four-Poster Canopy Edition Wallet Bed. A majestic miniature bedroom frame for your daily pocket essentials. Features a high durability polymer canopy frame with posts finished in an intricate mahogany effect wood grain. Complete with a soft simulated leather mattress deck for high visibility.",
+            description: "Four-Poster Canopy Edition Wallet Bed. A majestic miniature bedroom frame for your daily pocket essentials. Features a high durability polymer canopy frame with posts finished in an intricate mahogany effect wood grain. Complete with an automated nightlight and soft surface-protecting interior lining.",
             specs: [
                 "Durable polymer canopy frame with realistic mahogany-effect finish.",
                 "Base recess custom fitted for standard bi-fold and tri-fold wallets.",
-                "Soft simulated-leather mattress deck: waterproof, UV resistant and dust-proof.",
-                "Four-poster miniature design with nightstand canopy presence."
+                "Automated Nightlight Integration: motion and light-sensing warm nightstand glow.",
+                "Surface Protection: soft interior lining prevents scratches on leather and brass."
             ],
             image_base: "images/brand_gucci.jpg",
             image_comforter: "images/brand_gucci.jpg"
         },
         "Minimalist Platform": {
-            description: "Minimalist Platform Wallet Bed. A low profile miniature suite designed for clean desks and minimalist environments. Built on a high durability polymer platform frame finished in a high gloss white lacquer style, paired with a matching white simulated leather mattress deck.",
+            description: "Minimalist Platform Wallet Bed. A low-profile platform designed for clean desks and minimalist environments. Built on a high durability platform frame finished in a high gloss white lacquer style, paired with a matching white interior lining and automated nightlight sensor.",
             specs: [
                 "Durable polymer frame with high-gloss white finish.",
                 "Base recess custom fitted for standard bi-fold and tri-fold wallets.",
-                "Soft white simulated-leather mattress deck: waterproof, UV resistant and dust-proof.",
-                "Sleek low-profile platform design."
+                "Automated Nightlight Integration: motion and light-sensing warm nightstand glow.",
+                "Surface Protection: soft interior lining prevents scratches on leather and brass."
             ],
             image_base: "images/brand_white.jpg",
             image_comforter: "images/brand_white.jpg"
@@ -204,9 +204,19 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Function to recalculate waitlist pricing dynamically based on chosen comforter option
+    // Function to recalculate waitlist pricing dynamically based on package choice and chosen comforter option
     const updateModalPriceAndInputs = (productName) => {
-        let basePrice = 25.00;
+        let basePrice = 21.25; // Single price after 15% off
+        let comparePrice = 25.00;
+        let isBundle = false;
+        
+        const activePackage = document.querySelector('input[name="package_option"]:checked');
+        if (activePackage && activePackage.value === 'bundle') {
+            basePrice = 60.56; // 3-pack bundle price
+            comparePrice = 75.00;
+            isBundle = true;
+        }
+        
         let selectedComforter = "No Comforter";
         let comforterPrice = 0.00;
         
@@ -215,16 +225,16 @@ document.addEventListener('DOMContentLoaded', () => {
             const val = activeRadio.value;
             if (val === 'comforter-white') {
                 selectedComforter = "Comforter - White";
-                comforterPrice = 10.00;
+                comforterPrice = isBundle ? 30.00 : 10.00;
             } else if (val === 'comforter-gray') {
                 selectedComforter = "Comforter - Gray";
-                comforterPrice = 10.00;
+                comforterPrice = isBundle ? 30.00 : 10.00;
             } else if (val === 'comforter-black') {
                 selectedComforter = "Comforter - Black";
-                comforterPrice = 10.00;
+                comforterPrice = isBundle ? 30.00 : 10.00;
             } else if (val === 'comforter-burgundy') {
                 selectedComforter = "Comforter - Burgundy";
-                comforterPrice = 10.00;
+                comforterPrice = isBundle ? 30.00 : 10.00;
             }
         }
         
@@ -235,8 +245,14 @@ document.addEventListener('DOMContentLoaded', () => {
         if (modalPriceLabel) modalPriceLabel.textContent = formattedPrice;
         if (modalAddToCartPrice) modalAddToCartPrice.textContent = formattedPrice;
         
+        const discountLabel = document.querySelector('.modal-price-discount');
+        if (discountLabel) {
+            const totalCompare = comparePrice + (isBundle ? comforterPrice : comforterPrice);
+            discountLabel.textContent = `$${totalCompare.toFixed(2)}`;
+        }
+        
         // Sync hidden inputs for FormSpark waiting list submissions
-        if (selectedProdInput) selectedProdInput.value = productName;
+        if (selectedProdInput) selectedProdInput.value = isBundle ? `${productName} (3-Pack Bundle)` : productName;
         if (selectedComforterVal) selectedComforterVal.value = selectedComforter;
         if (selectedPriceVal) selectedPriceVal.value = formattedPrice;
     };
@@ -245,6 +261,33 @@ document.addEventListener('DOMContentLoaded', () => {
     comforterRadios.forEach(radio => {
         radio.addEventListener('change', () => {
             const productName = modalProductTitle.textContent.trim();
+            updateModalPriceAndInputs(productName);
+        });
+    });
+
+    // Package option radio click listeners
+    const packageRadios = document.querySelectorAll('input[name="package_option"]');
+    packageRadios.forEach(radio => {
+        radio.addEventListener('change', () => {
+            const productName = modalProductTitle.textContent.trim();
+            
+            // Adjust card active border styles
+            packageRadios.forEach(r => {
+                const design = r.nextElementSibling;
+                if (design) {
+                    design.style.borderColor = 'var(--border-light)';
+                    design.style.backgroundColor = 'var(--bg-gray-subtle)';
+                    design.style.boxShadow = 'none';
+                }
+            });
+            
+            const activeDesign = radio.nextElementSibling;
+            if (activeDesign) {
+                activeDesign.style.borderColor = 'var(--brand-teal)';
+                activeDesign.style.backgroundColor = 'var(--bg-white)';
+                activeDesign.style.boxShadow = '0 4px 12px var(--brand-teal-glow)';
+            }
+            
             updateModalPriceAndInputs(productName);
         });
     });
@@ -279,6 +322,28 @@ document.addEventListener('DOMContentLoaded', () => {
         // Reset default option to "No Comforter"
         const noComforterRadio = document.querySelector('input[name="comforter_option"][value="no-comforter"]');
         if (noComforterRadio) noComforterRadio.checked = true;
+        
+        // Reset default package to "single"
+        const singlePackageRadio = document.querySelector('input[name="package_option"][value="single"]');
+        if (singlePackageRadio) {
+            singlePackageRadio.checked = true;
+            // Apply standard styling to package designs
+            const pRadios = document.querySelectorAll('input[name="package_option"]');
+            pRadios.forEach(r => {
+                const design = r.nextElementSibling;
+                if (design) {
+                    if (r.value === 'single') {
+                        design.style.borderColor = 'var(--brand-teal)';
+                        design.style.backgroundColor = 'var(--bg-white)';
+                        design.style.boxShadow = '0 4px 12px var(--brand-teal-glow)';
+                    } else {
+                        design.style.borderColor = 'var(--border-light)';
+                        design.style.backgroundColor = 'var(--bg-gray-subtle)';
+                        design.style.boxShadow = 'none';
+                    }
+                }
+            });
+        }
         
         // Reset customizer bedding options to collapsed state
         const optionsSection = document.querySelector('.modal-options-section');
