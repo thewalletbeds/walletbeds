@@ -61,34 +61,8 @@ with Image.open(src_path) as img:
     clean_patch = img_resized.crop((860, 930, 910, 980))
     img_resized.paste(clean_patch, (935, 930))
     
-    # B. Overlay the silver logo at bottom-right corner (centered at 960, 955)
-    logo_w = 110
-    logo_h = int(logo_w * logo_silver_cropped.size[1] / logo_silver_cropped.size[0])
-    logo_resized = logo_silver_cropped.resize((logo_w, logo_h), Image.Resampling.LANCZOS)
-    logo_x = 960 - logo_w // 2
-    logo_y = 955 - logo_h // 2
-    img_resized.paste(logo_resized, (logo_x, logo_y), logo_resized)
-    
-    # C. Draw the text watermark "WalletBeds™" on the side rail (687, 560)
-    td = ImageDraw.Draw(img_resized)
-    watermark_text = "WalletBeds™"
-    text_color = (255, 255, 255, 255)
-    
-    if hasattr(td, 'textbbox'):
-        tb = td.textbbox((0, 0), watermark_text, font=font)
-        tw = tb[2] - tb[0]
-        th = tb[3] - tb[1]
-    else:
-        tw, th = td.textsize(watermark_text, font=font)
-        
-    txt_canvas = Image.new("RGBA", (tw + 20, th + 20), (0, 0, 0, 0))
-    td_c = ImageDraw.Draw(txt_canvas)
-    td_c.text((10, 10), watermark_text, font=font, fill=text_color)
-    
-    cx, cy = 687, 560
-    paste_x = cx - txt_canvas.size[0] // 2
-    paste_y = cy - txt_canvas.size[1] // 2
-    img_resized.paste(txt_canvas, (paste_x, paste_y), txt_canvas)
+    # B. We skip adding any custom watermarks to maintain a premium clean design.
+    pass
     
     # Save as JPEG
     final_rgb = img_resized.convert("RGB")

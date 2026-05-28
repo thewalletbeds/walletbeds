@@ -202,40 +202,13 @@ for src_name, dest_name, color in bed_mappings:
         # Paste transparent wallet on top of shadow
         composite_canvas.paste(wallet_rgba, (wx1, wy1), wallet_rgba)
         
-        # E. Watermark Branding Overlays (Erase AI star, overlay logo & side rail watermark)
+        # E. Watermark Branding Overlays (Erase AI star, skip logo & text watermark)
         # 1. Erase AI star at bottom-right
         clean_patch = composite_canvas.crop((860, 930, 910, 980))
         composite_canvas.paste(clean_patch, (935, 930))
         
-        # 2. Overlay silver brand logo (centered at 960, 955)
-        logo_w = 110
-        logo_h = int(logo_w * logo_silver_cropped.size[1] / logo_silver_cropped.size[0])
-        logo_resized = logo_silver_cropped.resize((logo_w, logo_h), Image.Resampling.LANCZOS)
-        logo_x = 960 - logo_w // 2
-        logo_y = 955 - logo_h // 2
-        composite_canvas.paste(logo_resized, (logo_x, logo_y), logo_resized)
-        
-        # 3. Draw horizontal "WalletBeds™" text on the side rail
-        td = ImageDraw.Draw(composite_canvas)
-        watermark_text = "WalletBeds™"
-        text_color = (255, 255, 255, 255)
-        
-        if hasattr(td, 'textbbox'):
-            tb = td.textbbox((0, 0), watermark_text, font=font)
-            tw = tb[2] - tb[0]
-            th = tb[3] - tb[1]
-        else:
-            tw, th = td.textsize(watermark_text, font=font)
-            
-        txt_canvas = Image.new("RGBA", (tw + 20, th + 20), (0, 0, 0, 0))
-        td_c = ImageDraw.Draw(txt_canvas)
-        td_c.text((10, 10), watermark_text, font=font, fill=text_color)
-        
-        cx, cy = rail_coordinates.get(dest_name, (687, 560))
-        paste_x = cx - txt_canvas.size[0] // 2
-        paste_y = cy - txt_canvas.size[1] // 2
-        
-        composite_canvas.paste(txt_canvas, (paste_x, paste_y), txt_canvas)
+        # We skip adding any custom watermarks to maintain a premium clean design.
+        pass
         
         # F. Save composite image to workspace images directory
         final_rgb = composite_canvas.convert("RGB")
