@@ -43,32 +43,33 @@
     </header>
 
     <main>
-        <!-- ⚡ High-Converting Split Hero Section -->
-        <section class="hero" id="waitlist-hero">
-            <div class="hero-container">
-                <!-- Block 1: Title & Subtitle -->
+        <!-- ⚡ High-Converting Full-Screen Looping Video Hero Section -->
+        <section class="hero video-hero" id="waitlist-hero">
+            <!-- Background Video Loop Container -->
+            <div class="hero-video-container">
+                <video autoplay loop muted playsinline class="hero-bg-video">
+                    <source src="images/Wallet_Bed_V_Video_Ready.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <!-- Subtle dark radial gradient overlay for text readability -->
+                <div class="hero-video-overlay"></div>
+                
+                <!-- Seamless Watermark Overlays to cover pre-existing video watermarks -->
+                <img src="images/The_Wallet_Bed_Official_Logo.png" alt="Wallet Beds Watermark Top Left" class="video-watermark watermark-tl">
+                <img src="images/The_Wallet_Bed_Official_Logo_2.png" alt="Wallet Beds Watermark Bottom Right" class="video-watermark watermark-br">
+            </div>
+
+            <!-- Overlaid Hero Content -->
+            <div class="hero-container video-hero-content">
                 <div class="hero-text-content">
                     <span class="hero-tag">Premium Bedside Innovation</span>
                     <h1>Your Daily Essentials<br class="mobile-br"> Deserve a Better Place to Rest.</h1>
                     <p class="subtitle">
                         Stop letting your wallet and keys end up on bare nightstands, left in the car, or buried in a workout bag. Give them a dedicated, premium home equipped with an automated nightlight.
                     </p>
-                </div>
-                
-                <!-- Block 2: Hero Visual (Bed Image) -->
-                <div class="hero-visual">
-                    <div class="hero-image-wrapper">
-                        <div class="card-brand-badge">
-                            <span class="brand-wallet">Wallet</span><span class="brand-beds">Beds</span><span class="brand-tm">™</span>
-                        </div>
-                        <img src="images/upholstered_black.jpg" alt="Midnight Tufted Edition Wallet Bed" class="hero-main-img">
-                        <div class="hero-glow-overlay"></div>
+                    <div class="hero-cta-wrapper" style="display: flex; justify-content: center; margin-top: 20px; z-index: 5;">
+                        <a href="#collection" class="btn-hero-cta" style="background-color: var(--brand-teal); color: var(--brand-navy); font-family: var(--font-heading); font-size: 16px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; padding: 18px 36px; border-radius: 4px; text-decoration: none; border: 1px solid var(--brand-teal); box-shadow: 0 4px 20px var(--brand-teal-glow); transition: all 0.3s ease; text-align: center;">Get Yours — 15% Off Applied At Checkout</a>
                     </div>
-                </div>
-                
-                <!-- Block 3: Hero CTA Button -->
-                <div class="hero-cta-wrapper" style="grid-column: 1 / -1; display: flex; justify-content: center; margin-top: 20px; z-index: 5;">
-                    <a href="#collection" class="btn-hero-cta" style="background-color: var(--brand-teal); color: var(--brand-navy); font-family: var(--font-heading); font-size: 16px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; padding: 18px 36px; border-radius: 4px; text-decoration: none; border: 1px solid var(--brand-teal); box-shadow: 0 4px 20px var(--brand-teal-glow); transition: all 0.3s ease; text-align: center;">Get Yours — 15% Off Applied At Checkout</a>
                 </div>
             </div>
         </section>

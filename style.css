@@ -389,6 +389,142 @@ body {
     pointer-events: none;
 }
 
+/* ==========================================================================
+   ⚡ Immersive Background Video Hero Section
+   ========================================================================== */
+.hero.video-hero {
+    position: relative;
+    height: 80vh;
+    min-height: 550px;
+    max-height: 750px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-dark);
+    overflow: hidden;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.hero-video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.hero-bg-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* radial dark overlay to maintain text readability */
+    background: radial-gradient(circle at 50% 50%, rgba(15, 18, 25, 0.45) 0%, rgba(10, 12, 17, 0.85) 90%);
+    z-index: 2;
+    pointer-events: none;
+}
+
+/* Watermark Overlay Styles */
+.video-watermark {
+    position: absolute;
+    z-index: 3;
+    pointer-events: none;
+    user-select: none;
+    opacity: 0.98;
+    filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.8));
+    transition: var(--transition-smooth);
+}
+
+.watermark-tl {
+    top: 20px;
+    left: 20px;
+    width: clamp(90px, 14vw, 170px);
+    height: auto;
+}
+
+.watermark-br {
+    bottom: 20px;
+    right: 20px;
+    width: clamp(70px, 11vw, 130px);
+    height: auto;
+}
+
+/* Content Container Overlaid on Video */
+.hero-container.video-hero-content {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    max-width: 800px;
+    z-index: 4;
+    position: relative;
+    padding: 60px 24px;
+    gap: 0 !important;
+}
+
+.hero-container.video-hero-content .hero-text-content {
+    max-width: 720px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-container.video-hero-content h1 {
+    font-family: var(--font-heading);
+    font-size: clamp(2.2rem, 5.5vw, 3.8rem);
+    font-weight: 800;
+    line-height: 1.15;
+    color: var(--text-white);
+    margin-bottom: 20px;
+    letter-spacing: -0.02em;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+}
+
+.hero-container.video-hero-content .subtitle {
+    font-family: var(--font-body);
+    font-size: clamp(14px, 1.8vw, 18px);
+    color: #A2C4FF; /* high contrast visual visibility */
+    line-height: 1.6;
+    margin-bottom: 35px;
+    max-width: 620px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.hero-container.video-hero-content .hero-cta-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .hero.video-hero {
+        height: 65vh;
+        min-height: 480px;
+    }
+    
+    .watermark-tl {
+        top: 15px;
+        left: 15px;
+    }
+    
+    .watermark-br {
+        bottom: 15px;
+        right: 15px;
+    }
+}
+
 /* 🏷️ Collection Heading Section */
 .collection-section {
     padding: 100px 24px;
