@@ -76,8 +76,13 @@ for src_name, dest_name in brand_files.items():
         clean_patch = img_resized.crop((860, 930, 910, 980))
         img_resized.paste(clean_patch, (935, 930))
         
-        # B. We skip adding any custom watermarks to maintain a premium clean design.
-        pass
+        # B. Overlay the silver logo at bottom-right corner (centered at 960, 955)
+        logo_w = 110
+        logo_h = int(logo_w * logo_silver_cropped.size[1] / logo_silver_cropped.size[0])
+        logo_resized = logo_silver_cropped.resize((logo_w, logo_h), Image.Resampling.LANCZOS)
+        logo_x = 960 - logo_w // 2
+        logo_y = 955 - logo_h // 2
+        img_resized.paste(logo_resized, (logo_x, logo_y), logo_resized)
         
         # Save as JPEG
         final_rgb = img_resized.convert("RGB")

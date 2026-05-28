@@ -207,8 +207,13 @@ for src_name, dest_name, color in bed_mappings:
         clean_patch = composite_canvas.crop((860, 930, 910, 980))
         composite_canvas.paste(clean_patch, (935, 930))
         
-        # We skip adding any custom watermarks to maintain a premium clean design.
-        pass
+        # 2. Overlay silver brand logo (centered at 960, 955)
+        logo_w = 110
+        logo_h = int(logo_w * logo_silver_cropped.size[1] / logo_silver_cropped.size[0])
+        logo_resized = logo_silver_cropped.resize((logo_w, logo_h), Image.Resampling.LANCZOS)
+        logo_x = 960 - logo_w // 2
+        logo_y = 955 - logo_h // 2
+        composite_canvas.paste(logo_resized, (logo_x, logo_y), logo_resized)
         
         # F. Save composite image to workspace images directory
         final_rgb = composite_canvas.convert("RGB")
