@@ -1,8 +1,8 @@
 import os
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
-source_dir = r"D:\The Wallet Bed Master Document\Brand Wallets Photos"
-output_dir = r"C:\Users\User\.gemini\antigravity\scratch\walletbeds\images"
+source_dir = "."
+output_dir = "images"
 logo_path = os.path.join(output_dir, "logo_transparent.png")
 
 print("--- Starting Branded Image processing pipeline ---")

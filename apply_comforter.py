@@ -2,10 +2,10 @@ import os
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
 # 1. Setup paths
-brain_dir = r"C:\Users\User\.gemini\antigravity\brain\306e7690-0192-443a-a5ec-c1551c206af4"
-comforter_src = os.path.join(brain_dir, "media__1779485917317.jpg")  # Inspiration image
-logo_path = os.path.join(brain_dir, "media__1779388800515.png")     # Brand logo
-output_dir = r"C:\Users\User\.gemini\antigravity\scratch\walletbeds\images"
+brain_dir = "."
+comforter_src = "images_backup/upholstered_black.jpg"
+logo_path = "images/logo_transparent.png"
+output_dir = "images"
 
 # Ensure output directory exists
 os.makedirs(output_dir, exist_ok=True)
