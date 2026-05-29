@@ -2187,11 +2187,29 @@ img {
 }
 
 .product-image,
-.product-img {
+.product-img:not(.product-img-secondary) {
   display: block;
   width: 100%;
   height: auto;
   object-fit: cover;
+}
+
+/* Explicitly enforce absolute positioning and opacity constraints for secondary images */
+.product-img-secondary {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  transition: opacity 0.4s ease-in-out, transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+}
+
+.product-card:hover .product-img-secondary {
+  opacity: 1 !important;
+  transform: scale(1.04) !important;
+  pointer-events: auto !important;
 }
 
 /* ==========================================
@@ -2246,4 +2264,156 @@ img {
 .minimalist-platform-card .product-image,
 .minimalist-platform-card .product-img {
   background-color: #ffffff; /* Guarantees high-gloss visual clarity background fallback */
+}
+
+/* ==========================================================================
+   🛍️ RE-ARCHITECTED PRODUCT CARD STYLE SYSTEM
+   ========================================================================== */
+.card-header {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.card-header .wishlist-btn {
+  pointer-events: auto; /* Enables clicking the wishlist heart */
+  position: static;     /* Integrates inside flex layout */
+  width: auto;
+  height: auto;
+}
+
+.brand-badge {
+  font-family: var(--font-heading);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: none;
+  pointer-events: none;
+  background: rgba(6, 8, 12, 0.9);
+  padding: 5px 9px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  display: flex;
+  align-items: center;
+  gap: 0.5px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(6px);
+  transition: var(--transition-smooth);
+  color: var(--text-white);
+}
+
+.product-card:hover .brand-badge {
+  background: rgba(6, 8, 12, 0.95);
+  border-color: var(--brand-teal);
+  box-shadow: 0 4px 20px rgba(0, 102, 255, 0.35);
+}
+
+/* --- Product Card Layout Fixes --- */
+.product-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: #0b132b; /* Matches your deep dark theme */
+  border-radius: 12px;
+  padding: 16px;
+  overflow: hidden;
+}
+
+/* Image containment rules to separate primary image from watermark */
+.product-image-container {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+  background-color: var(--bg-gray-subtle);
+  border: 1px solid var(--border-light);
+  border-radius: 3px;
+}
+
+.primary-product-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  z-index: 2; /* Keeps product image clean and on top */
+  transition: transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.product-card:hover .primary-product-image {
+  transform: scale(1.04);
+}
+
+/* Clean up the official watermark logo placement */
+.watermark-logo {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  width: 40px;
+  height: auto;
+  opacity: 0.3; /* Soft blend into background instead of heavy overlap */
+  z-index: 1;
+  pointer-events: none;
+}
+
+.product-info {
+  text-align: left;
+}
+
+.star-rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 8px;
+  font-size: 12px;
+}
+
+.star.filled {
+  color: var(--brand-gold);
+}
+
+.product-info h3 {
+  font-family: var(--font-heading);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-white);
+  margin-bottom: 6px;
+  letter-spacing: -0.01em;
+}
+
+.product-info .price {
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-white);
+  margin-bottom: 12px;
+}
+
+.product-info .description {
+  font-size: 13px;
+  color: var(--text-white);
+  font-weight: 600;
+}
+
+/* --- Navigation & Sticky Layout Fix --- */
+header.pageheader,
+header.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(10, 25, 47, 0.95);
+  backdrop-filter: blur(5px);
+}
+
+.announcement-bar {
+  position: relative;
+  z-index: 1001;
+  width: 100%;
 }
