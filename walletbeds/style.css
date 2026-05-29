@@ -2149,3 +2149,101 @@ img {
 }
 
 
+
+
+/* ==========================================================================
+   🎯 Floating Product Image Watermark
+   ========================================================================== */
+.product-watermark {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    z-index: 5;
+    width: 48px;
+    height: 48px;
+    opacity: 0.75;
+    pointer-events: none; /* Allows user interactions/hover to pass through to images */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Micro-interaction: enhance visibility and scale slightly when card/image is hovered */
+.product-card:hover .product-watermark,
+.hero-image-wrapper:hover .product-watermark {
+    opacity: 0.95;
+    transform: scale(1.06);
+}
+
+/* ==========================================
+   POSITIONING CONTEXTS & LAYOUT INTEGRITY
+   ========================================== */
+
+/* Forces product image wrapper blocks to act as absolute anchors */
+.image-container,
+.card-media {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+
+.product-image,
+.product-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* ==========================================
+   LOWER-RIGHT THIRD WATERMARK STYLEENGINE
+   ========================================== */
+.walletbeds-lower-third-overlay {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  z-index: 5;
+  pointer-events: none; /* Ensures UI click-through directly to checkout targets */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.walletbeds-lower-third-overlay img {
+  height: 22px; /* Standardized sizing metric across featured collection grids */
+  width: auto;
+  display: block;
+  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.4)); /* Maximizes contrast visibility */
+}
+
+/* ==========================================
+   HERO WATERMARK FIX (EXPLICIT POSITIONING)
+   ========================================== */
+.hero-watermark-overlay {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 20; /* Elevates above layout base artifacts to properly block underlying nodes */
+  pointer-events: none;
+}
+
+.hero-watermark-overlay .watermark-asset {
+  height: 32px; /* Scaled cleanly for the larger hero viewport scale */
+  width: auto;
+}
+
+/* ==========================================
+   MINIMALIST PLATFORM SPECIFIC OVERLAY STRIP
+   ========================================== */
+/* Disables inherited global faux textures/dark filters causing the visual distortion */
+.clean-lacquer-context::before,
+.clean-lacquer-context::after {
+  display: none !important;
+  background: none !important;
+  mix-blend-mode: normal !important;
+}
+
+.minimalist-platform-card .product-image,
+.minimalist-platform-card .product-img {
+  background-color: #ffffff; /* Guarantees high-gloss visual clarity background fallback */
+}
