@@ -103,8 +103,8 @@ document.addEventListener('DOMContentLoaded', () => {
             description: "Midnight Tufted Edition Wallet Bed. A premium desktop display and bedside suite featuring a faux charcoal fabric texture and a tufted button headboard. Equipped with an integrated automated nightlight that senses motion and darkness, and a soft surface-protecting lining to cradle your wallet and keys.",
             specs: [
                 "Precision-molded polymer frame with faux-charcoal fabric texture.",
-                "Base recess custom fitted for standard bi-fold and tri-fold wallets.",
-                "Automated Nightlight Integration: motion and light-sensing warm nightstand glow.",
+                "Universal Fit & Dimensions: Fits bi-fold, tri-fold, Ridge wallets, and phones. (Interior tray: 5.0\" x 3.7\", Compact exterior footprint: 5.3\" x 3.9\").",
+                "Automated Nightlight Integration: motion/weight sensing warm glow. Powered by 3 AAA batteries (100% wire-free for clean cable management).",
                 "Surface Protection: soft interior lining prevents scratches on leather and brass."
             ],
             image_base: "images/WalletBedMidnightTuftedEdition.png",
@@ -114,8 +114,8 @@ document.addEventListener('DOMContentLoaded', () => {
             description: "Royal Blue Tufted Edition Wallet Bed. Bring a unique visual highlight to your nightstand or workspace. Features a high durability polymer frame with a textured velvet-like royal blue finish. Outfitted with an automated nightlight and a soft surface-protecting lining to cradle your wallet and keys.",
             specs: [
                 "Precision-molded polymer frame with velvet-textured finish.",
-                "Base recess custom fitted for standard bi-fold and tri-fold wallets.",
-                "Automated Nightlight Integration: motion and light-sensing warm nightstand glow.",
+                "Universal Fit & Dimensions: Fits bi-fold, tri-fold, Ridge wallets, and phones. (Interior tray: 5.0\" x 3.7\", Compact exterior footprint: 5.3\" x 3.9\").",
+                "Automated Nightlight Integration: motion/weight sensing warm glow. Powered by 3 AAA batteries (100% wire-free for clean cable management).",
                 "Surface Protection: soft interior lining prevents scratches on leather and brass."
             ],
             image_base: "images/WalletBedRoyalBlueTufted.png",
@@ -125,8 +125,8 @@ document.addEventListener('DOMContentLoaded', () => {
             description: "Industrial Pipe Edition Wallet Bed. Perfect for modern work desks, tech setups, and industrial workspaces. Crafted with a high durability polymer frame replicating rugged matte black steel pipe joints. Equipped with an automated nightlight and a soft surface-protecting lining.",
             specs: [
                 "Durable polymer frame with realistic industrial pipe-joint styling.",
-                "Base recess custom fitted for standard bi-fold and tri-fold wallets.",
-                "Automated Nightlight Integration: motion and light-sensing warm nightstand glow.",
+                "Universal Fit & Dimensions: Fits bi-fold, tri-fold, Ridge wallets, and phones. (Interior tray: 5.0\" x 3.7\", Compact exterior footprint: 5.3\" x 3.9\").",
+                "Automated Nightlight Integration: motion/weight sensing warm glow. Powered by 3 AAA batteries (100% wire-free for clean cable management).",
                 "Surface Protection: soft interior lining prevents scratches on leather and brass."
             ],
             image_base: "images/WalletBedIndustrialPipeEdition.png",
@@ -136,8 +136,8 @@ document.addEventListener('DOMContentLoaded', () => {
             description: "Classic Sleigh Edition Wallet Bed. Features a traditional sleigh silhouette contoured for bedside nightstands. Crafted from a high durability polymer frame finished with a realistic walnut grain wood effect. Complete with an automated nightlight and soft surface-protecting interior lining.",
             specs: [
                 "Durable polymer frame with realistic walnut-grain wood grain finish.",
-                "Base recess custom fitted for standard bi-fold and tri-fold wallets.",
-                "Automated Nightlight Integration: motion and light-sensing warm nightstand glow.",
+                "Universal Fit & Dimensions: Fits bi-fold, tri-fold, Ridge wallets, and phones. (Interior tray: 5.0\" x 3.7\", Compact exterior footprint: 5.3\" x 3.9\").",
+                "Automated Nightlight Integration: motion/weight sensing warm glow. Powered by 3 AAA batteries (100% wire-free for clean cable management).",
                 "Surface Protection: soft interior lining prevents scratches on leather and brass."
             ],
             image_base: "images/WalletBedClassicSleighEdition.png",
@@ -147,8 +147,8 @@ document.addEventListener('DOMContentLoaded', () => {
             description: "Four-Poster Canopy Edition Wallet Bed. A majestic miniature bedroom frame for your daily pocket essentials. Features a high durability polymer canopy frame with posts finished in an intricate mahogany effect wood grain. Complete with an automated nightlight and soft surface-protecting interior lining.",
             specs: [
                 "Durable polymer canopy frame with realistic mahogany-effect finish.",
-                "Base recess custom fitted for standard bi-fold and tri-fold wallets.",
-                "Automated Nightlight Integration: motion and light-sensing warm nightstand glow.",
+                "Universal Fit & Dimensions: Fits bi-fold, tri-fold, Ridge wallets, and phones. (Interior tray: 5.0\" x 3.7\", Compact exterior footprint: 5.3\" x 3.9\").",
+                "Automated Nightlight Integration: motion/weight sensing warm glow. Powered by 3 AAA batteries (100% wire-free for clean cable management).",
                 "Surface Protection: soft interior lining prevents scratches on leather and brass."
             ],
             image_base: "images/WalletBedFourPosterCanopy.png",
@@ -158,8 +158,8 @@ document.addEventListener('DOMContentLoaded', () => {
             description: "Minimalist Platform Wallet Bed. A low-profile platform designed for clean desks and minimalist environments. Built on a high durability platform frame finished in a high gloss white lacquer style, paired with a matching white interior lining and automated nightlight sensor.",
             specs: [
                 "Durable polymer frame with high-gloss white finish.",
-                "Base recess custom fitted for standard bi-fold and tri-fold wallets.",
-                "Automated Nightlight Integration: motion and light-sensing warm nightstand glow.",
+                "Universal Fit & Dimensions: Fits bi-fold, tri-fold, Ridge wallets, and phones. (Interior tray: 5.0\" x 3.7\", Compact exterior footprint: 5.3\" x 3.9\").",
+                "Automated Nightlight Integration: motion/weight sensing warm glow. Powered by 3 AAA batteries (100% wire-free for clean cable management).",
                 "Surface Protection: soft interior lining prevents scratches on leather and brass."
             ],
             image_base: "images/WalletBedMinimalistPlatform.png",
