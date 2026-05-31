@@ -252,7 +252,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         
         // Sync hidden inputs for FormSpark waiting list submissions
-        if (selectedProdInput) selectedProdInput.value = isBundle ? `${productName} (3-Pack Bundle)` : productName;
+        if (selectedProdInput) selectedProdInput.value = isBundle ? `${productName} (Family and Friends Pack Bundle)` : productName;
         if (selectedComforterVal) selectedComforterVal.value = selectedComforter;
         if (selectedPriceVal) selectedPriceVal.value = formattedPrice;
     };
