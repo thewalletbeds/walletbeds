@@ -107,8 +107,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 "Automated Nightlight Integration: motion and light-sensing warm nightstand glow.",
                 "Surface Protection: soft interior lining prevents scratches on leather and brass."
             ],
-            image_base: "images/brand_lv.jpg",
-            image_comforter: "images/brand_lv.jpg"
+            image_base: "images/WalletBedMidnightTuftedEdition.png",
+            image_comforter: "images/WalletBedMidnightTuftedEdition.png"
         },
         "Royal Blue Tufted Edition": {
             description: "Royal Blue Tufted Edition Wallet Bed. Bring a unique visual highlight to your nightstand or workspace. Features a high durability polymer frame with a textured velvet-like royal blue finish. Outfitted with an automated nightlight and a soft surface-protecting lining to cradle your wallet and keys.",
@@ -118,8 +118,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 "Automated Nightlight Integration: motion and light-sensing warm nightstand glow.",
                 "Surface Protection: soft interior lining prevents scratches on leather and brass."
             ],
-            image_base: "images/brand_goyard.jpg",
-            image_comforter: "images/brand_goyard.jpg"
+            image_base: "images/WalletBedRoyalBlueTufted.png",
+            image_comforter: "images/WalletBedRoyalBlueTufted.png"
         },
         "Industrial Pipe Edition": {
             description: "Industrial Pipe Edition Wallet Bed. Perfect for modern work desks, tech setups, and industrial workspaces. Crafted with a high durability polymer frame replicating rugged matte black steel pipe joints. Equipped with an automated nightlight and a soft surface-protecting lining.",
@@ -129,8 +129,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 "Automated Nightlight Integration: motion and light-sensing warm nightstand glow.",
                 "Surface Protection: soft interior lining prevents scratches on leather and brass."
             ],
-            image_base: "images/brand_valentino.jpg",
-            image_comforter: "images/brand_valentino.jpg"
+            image_base: "images/WalletBedIndustrialPipeEdition.png",
+            image_comforter: "images/WalletBedIndustrialPipeEdition.png"
         },
         "Classic Sleigh Edition": {
             description: "Classic Sleigh Edition Wallet Bed. Features a traditional sleigh silhouette contoured for bedside nightstands. Crafted from a high durability polymer frame finished with a realistic walnut grain wood effect. Complete with an automated nightlight and soft surface-protecting interior lining.",
@@ -140,8 +140,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 "Automated Nightlight Integration: motion and light-sensing warm nightstand glow.",
                 "Surface Protection: soft interior lining prevents scratches on leather and brass."
             ],
-            image_base: "images/brand_swiss.jpg",
-            image_comforter: "images/brand_swiss.jpg"
+            image_base: "images/WalletBedClassicSleighEdition.png",
+            image_comforter: "images/WalletBedClassicSleighEdition.png"
         },
         "Four-Poster Canopy Edition": {
             description: "Four-Poster Canopy Edition Wallet Bed. A majestic miniature bedroom frame for your daily pocket essentials. Features a high durability polymer canopy frame with posts finished in an intricate mahogany effect wood grain. Complete with an automated nightlight and soft surface-protecting interior lining.",
@@ -151,8 +151,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 "Automated Nightlight Integration: motion and light-sensing warm nightstand glow.",
                 "Surface Protection: soft interior lining prevents scratches on leather and brass."
             ],
-            image_base: "images/brand_gucci.jpg",
-            image_comforter: "images/brand_gucci.jpg"
+            image_base: "images/WalletBedFourPosterCanopy.png",
+            image_comforter: "images/WalletBedFourPosterCanopy.png"
         },
         "Minimalist Platform": {
             description: "Minimalist Platform Wallet Bed. A low-profile platform designed for clean desks and minimalist environments. Built on a high durability platform frame finished in a high gloss white lacquer style, paired with a matching white interior lining and automated nightlight sensor.",
@@ -162,8 +162,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 "Automated Nightlight Integration: motion and light-sensing warm nightstand glow.",
                 "Surface Protection: soft interior lining prevents scratches on leather and brass."
             ],
-            image_base: "images/brand_white.jpg",
-            image_comforter: "images/brand_white.jpg"
+            image_base: "images/WalletBedMinimalistPlatform.png",
+            image_comforter: "images/WalletBedMinimalistPlatform.png"
         }
     };
 
