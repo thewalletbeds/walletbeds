@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
             specs: [
                 "Precision-molded polymer frame with faux-charcoal fabric texture.",
                 "Universal Fit & Dimensions: Fits bi-fold, tri-fold, Ridge wallets, and phones. (Interior tray: 5.0\" x 3.7\", Compact exterior footprint: 5.3\" x 3.9\").",
-                "Automated Nightlight Integration: Timer sensing warm glow. Powered by 3 AAA batteries (100% wire-free for clean cable management).",
+                "Automated Nightlight Integration: Timer-activated warm glow. Powered by 3 AAA batteries (100% wire-free for clean cable management).",
                 "Surface Protection: soft interior lining prevents scratches on leather and brass."
             ],
             image_base: "images/WalletBedMidnightTuftedEdition.png",
@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
             specs: [
                 "Precision-molded polymer frame with velvet-textured finish.",
                 "Universal Fit & Dimensions: Fits bi-fold, tri-fold, Ridge wallets, and phones. (Interior tray: 5.0\" x 3.7\", Compact exterior footprint: 5.3\" x 3.9\").",
-                "Automated Nightlight Integration: Timer sensing warm glow. Powered by 3 AAA batteries (100% wire-free for clean cable management).",
+                "Automated Nightlight Integration: Timer-activated warm glow. Powered by 3 AAA batteries (100% wire-free for clean cable management).",
                 "Surface Protection: soft interior lining prevents scratches on leather and brass."
             ],
             image_base: "images/WalletBedRoyalBlueTufted.png",
@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
             specs: [
                 "Durable polymer frame with realistic industrial pipe-joint styling.",
                 "Universal Fit & Dimensions: Fits bi-fold, tri-fold, Ridge wallets, and phones. (Interior tray: 5.0\" x 3.7\", Compact exterior footprint: 5.3\" x 3.9\").",
-                "Automated Nightlight Integration: Timer sensing warm glow. Powered by 3 AAA batteries (100% wire-free for clean cable management).",
+                "Automated Nightlight Integration: Timer-activated warm glow. Powered by 3 AAA batteries (100% wire-free for clean cable management).",
                 "Surface Protection: soft interior lining prevents scratches on leather and brass."
             ],
             image_base: "images/WalletBedIndustrialPipeEdition.png",
@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
             specs: [
                 "Durable polymer frame with realistic walnut-grain wood grain finish.",
                 "Universal Fit & Dimensions: Fits bi-fold, tri-fold, Ridge wallets, and phones. (Interior tray: 5.0\" x 3.7\", Compact exterior footprint: 5.3\" x 3.9\").",
-                "Automated Nightlight Integration: Timer sensing warm glow. Powered by 3 AAA batteries (100% wire-free for clean cable management).",
+                "Automated Nightlight Integration: Timer-activated warm glow. Powered by 3 AAA batteries (100% wire-free for clean cable management).",
                 "Surface Protection: soft interior lining prevents scratches on leather and brass."
             ],
             image_base: "images/WalletBedClassicSleighEdition.png",
@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
             specs: [
                 "Durable polymer canopy frame with realistic mahogany-effect finish.",
                 "Universal Fit & Dimensions: Fits bi-fold, tri-fold, Ridge wallets, and phones. (Interior tray: 5.0\" x 3.7\", Compact exterior footprint: 5.3\" x 3.9\").",
-                "Automated Nightlight Integration: Timer sensing warm glow. Powered by 3 AAA batteries (100% wire-free for clean cable management).",
+                "Automated Nightlight Integration: Timer-activated warm glow. Powered by 3 AAA batteries (100% wire-free for clean cable management).",
                 "Surface Protection: soft interior lining prevents scratches on leather and brass."
             ],
             image_base: "images/WalletBedFourPosterCanopy.png",
@@ -159,7 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
             specs: [
                 "Durable polymer frame with high-gloss white finish.",
                 "Universal Fit & Dimensions: Fits bi-fold, tri-fold, Ridge wallets, and phones. (Interior tray: 5.0\" x 3.7\", Compact exterior footprint: 5.3\" x 3.9\").",
-                "Automated Nightlight Integration: Timer sensing warm glow. Powered by 3 AAA batteries (100% wire-free for clean cable management).",
+                "Automated Nightlight Integration: Timer-activated warm glow. Powered by 3 AAA batteries (100% wire-free for clean cable management).",
                 "Surface Protection: soft interior lining prevents scratches on leather and brass."
             ],
             image_base: "images/WalletBedMinimalistPlatform.png",
