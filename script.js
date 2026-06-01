@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
             };
 
             const startSlideShow = () => {
-                slideInterval = setInterval(nextSlide, 5000);
+                slideInterval = setInterval(nextSlide, 4000);
             };
 
             sliderDots.forEach((dot, index) => {
