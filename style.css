@@ -2267,7 +2267,7 @@ img {
 }
 
 /* White border to match infographic style */
-.product-img, .modal-main-img, .modal-thumb, .hero-main-img, .infographic-reminder-section img {
+.product-img, .modal-main-img, .modal-thumb, .hero-main-img, .infographic-reminder-section img, .comforter-thumbnail-wrapper img {
     border: 4px solid #ffffff !important;
     box-sizing: border-box !important;
     border-radius: 4px !important;
