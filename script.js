@@ -4,38 +4,42 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    // Hero Slider Logic
-    const heroSlides = document.querySelectorAll('.hero-slide');
-    const sliderDots = document.querySelectorAll('.slider-dot');
-    let currentSlide = 0;
-    let slideInterval;
+    // Hero Slider Logic (Supports Multiple Sliders)
+    const sliders = document.querySelectorAll('.hero-slider');
+    
+    sliders.forEach(slider => {
+        const heroSlides = slider.querySelectorAll('.hero-slide');
+        const sliderDots = slider.querySelectorAll('.slider-dot');
+        let currentSlide = 0;
+        let slideInterval;
 
-    if (heroSlides.length > 0) {
-        const nextSlide = () => {
-            heroSlides[currentSlide].classList.remove('active');
-            sliderDots[currentSlide].classList.remove('active');
-            currentSlide = (currentSlide + 1) % heroSlides.length;
-            heroSlides[currentSlide].classList.add('active');
-            sliderDots[currentSlide].classList.add('active');
-        };
-
-        const startSlideShow = () => {
-            slideInterval = setInterval(nextSlide, 5000);
-        };
-
-        sliderDots.forEach((dot, index) => {
-            dot.addEventListener('click', () => {
-                clearInterval(slideInterval); // pause auto-play on manual click
+        if (heroSlides.length > 0) {
+            const nextSlide = () => {
                 heroSlides[currentSlide].classList.remove('active');
-                sliderDots[currentSlide].classList.remove('active');
-                currentSlide = index;
+                if(sliderDots[currentSlide]) sliderDots[currentSlide].classList.remove('active');
+                currentSlide = (currentSlide + 1) % heroSlides.length;
                 heroSlides[currentSlide].classList.add('active');
-                sliderDots[currentSlide].classList.add('active');
-            });
-        });
+                if(sliderDots[currentSlide]) sliderDots[currentSlide].classList.add('active');
+            };
 
-        startSlideShow();
-    }
+            const startSlideShow = () => {
+                slideInterval = setInterval(nextSlide, 5000);
+            };
+
+            sliderDots.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    clearInterval(slideInterval); // pause auto-play on manual click
+                    heroSlides[currentSlide].classList.remove('active');
+                    sliderDots[currentSlide].classList.remove('active');
+                    currentSlide = index;
+                    heroSlides[currentSlide].classList.add('active');
+                    sliderDots[currentSlide].classList.add('active');
+                });
+            });
+
+            startSlideShow();
+        }
+    });
 
     
     // ==========================================
