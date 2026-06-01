@@ -2265,3 +2265,10 @@ img {
 .minimalist-platform-card .product-img {
   background-color: #ffffff; /* Guarantees high-gloss visual clarity background fallback */
 }
+
+/* White border to match infographic style */
+.product-img, .modal-main-img, .modal-thumb {
+    border: 4px solid #ffffff !important;
+    box-sizing: border-box !important;
+    border-radius: 4px !important;
+}
